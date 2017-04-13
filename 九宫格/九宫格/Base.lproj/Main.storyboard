@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f9I-9r-6KY" customClass="MYView">
+                                <rect key="frame" x="30" y="221.5" width="314" height="335.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZOc-bD-8IX">
+                                <rect key="frame" x="137" y="40" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Eqs-JT-K7G"/>
+                                    <constraint firstAttribute="height" constant="100" id="d8m-uY-7bO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请绘制手势密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2J-F7-ykY">
+                                <rect key="frame" x="123.5" y="160" width="128.5" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGT-YD-c1d">
+                                <rect key="frame" x="154" y="597" width="66" height="30"/>
+                                <state key="normal" title=" 忘记密码"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f9I-9r-6KY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="2Hu-br-zcV"/>
+                            <constraint firstItem="c2J-F7-ykY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2sW-IO-6jf"/>
+                            <constraint firstItem="SGT-YD-c1d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Cd-CL-EiG"/>
+                            <constraint firstAttribute="bottom" secondItem="SGT-YD-c1d" secondAttribute="bottom" constant="40" id="51Z-pC-PCc"/>
+                            <constraint firstItem="f9I-9r-6KY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CfA-XS-Wub"/>
+                            <constraint firstItem="ZOc-bD-8IX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40" id="CiT-OF-TWi"/>
+                            <constraint firstItem="c2J-F7-ykY" firstAttribute="top" secondItem="ZOc-bD-8IX" secondAttribute="bottom" constant="20" id="UpK-vc-RL6"/>
+                            <constraint firstItem="ZOc-bD-8IX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eh0-kP-ObU"/>
+                            <constraint firstItem="f9I-9r-6KY" firstAttribute="top" secondItem="c2J-F7-ykY" secondAttribute="bottom" constant="40" id="gIM-w6-IeA"/>
+                            <constraint firstItem="SGT-YD-c1d" firstAttribute="top" secondItem="f9I-9r-6KY" secondAttribute="bottom" constant="40" id="tFK-c9-5Gq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="ZOc-bD-8IX" id="bHf-aD-tXY"/>
+                        <outlet property="passwordView" destination="f9I-9r-6KY" id="ckz-ny-8wR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
